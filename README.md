@@ -30,6 +30,8 @@ graph TD
         Gateway -->|TCP: 3004| Cart[Cart Microservice]
         Gateway -->|TCP: 3005| Payments[Payments Microservice]
         Gateway -->|TCP: 3006| Inventory[Inventory Microservice]
+        Gateway -->|TCP: 3007| Notifications[Notification Microservice]
+        Gateway -->|TCP: 3008| Reviews[Reviews Microservice]
     end
 ```
 
@@ -57,14 +59,18 @@ nestjs-microservices/
 │   │       ├── cart/            # Domain cart client & controller
 │   │       ├── payments/        # Domain payments client & controller
 │   │       ├── inventory/       # Domain inventory client & controller
+│   │       ├── notifications/   # Domain notifications client & controller
+│   │       ├── reviews/         # Domain reviews client & controller
 │   │       └── auth/            # Gateway authentication & user setup
 │   │
 │   ├── auth-microservice/       # Handles authentication & users database logic
 │   ├── products-microservice/   # Handles products catalog
 │   ├── orders-microservice/     # Handles customer orders
 │   ├── cart-microservice/       # Handles shopping cart operations
-│   ├── payments-microservice/   # Processes mock payment transctions
-│   └── inventory-microservice/  # Manages stocks and warehouse locations
+│   ├── payments-microservice/   # Processes mock payment transactions
+│   ├── inventory-microservice/  # Manages stocks and warehouse locations
+│   ├── notification-microservice/ # Sends emails, SMS notifications
+│   └── reviews-microservice/    # Manages product ratings and user feedback
 │
 ├── shared/                      # Monorepo Shared Library (Exposed via @nestjs-microservices/shared)
 │   └── src/
@@ -91,6 +97,8 @@ All microservices listen on high-performance TCP ports:
 | **Cart Service** | TCP | `3004` | `get_cart` | Shopping cart operations |
 | **Payments Service** | TCP | `3005` | `get_payments` | Processing payments transactions |
 | **Inventory Service** | TCP | `3006` | `get_inventory` | Warehouses and stock counts |
+| **Notification Service** | TCP | `3007` | `send_notification` | Notification alerts (Email/SMS) |
+| **Reviews Service** | TCP | `3008` | `get_reviews` | Ratings & user comment records |
 
 ---
 
@@ -120,11 +128,13 @@ npx nx serve auth-microservice
 ```
 
 ### 4. Interactive API Documentation (Swagger)
-Once the applications are running, open your browser and navigate to:
-```text
-http://localhost:3000/api/docs
-```
-Here, you can test all endpoints (`auth`, `products`, `orders`, `cart`, `payments`, `inventory`) interactively.
+
+> [!IMPORTANT]
+> **Swagger API Documentation Link:**
+> Once the applications are running, open your browser and navigate to:
+> 👉 **[http://localhost:3000/api/docs](http://localhost:3000/api/docs)**
+>
+> You can test all endpoints (`auth`, `products`, `orders`, `cart`, `payments`, `inventory`, `notifications`, `reviews`) interactively from the browser.
 
 ---
 
