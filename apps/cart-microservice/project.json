@@ -1,0 +1,24 @@
+{
+  "name": "cart-microservice",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/cart-microservice/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "cart-microservice:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "cart-microservice:build:development"
+        },
+        "production": {
+          "buildTarget": "cart-microservice:build:production"
+        }
+      }
+    }
+  }
+}
