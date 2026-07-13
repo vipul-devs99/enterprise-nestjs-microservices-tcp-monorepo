@@ -1,7 +1,7 @@
 {
-  "name": "products-microservice",
+  "name": "reviews-microservice",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/products-microservice/src",
+  "sourceRoot": "apps/reviews-microservice/src",
   "projectType": "application",
   "tags": [],
   "targets": {
@@ -9,15 +9,15 @@
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "products-microservice:build",
+        "buildTarget": "reviews-microservice:build",
         "inspect": false
       },
       "configurations": {
         "development": {
-          "buildTarget": "products-microservice:build:development"
+          "buildTarget": "reviews-microservice:build:development"
         },
         "production": {
-          "buildTarget": "products-microservice:build:production"
+          "buildTarget": "reviews-microservice:build:production"
         }
       }
     }

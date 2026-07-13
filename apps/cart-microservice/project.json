@@ -9,7 +9,8 @@
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "cart-microservice:build"
+        "buildTarget": "cart-microservice:build",
+        "inspect": false
       },
       "configurations": {
         "development": {

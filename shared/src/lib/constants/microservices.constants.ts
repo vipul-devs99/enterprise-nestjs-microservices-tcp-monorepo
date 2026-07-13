@@ -5,6 +5,8 @@ export enum Services {
   CART = 'CART_SERVICE',
   PAYMENTS = 'PAYMENTS_SERVICE',
   INVENTORY = 'INVENTORY_SERVICE',
+  NOTIFICATIONS = 'NOTIFICATIONS_SERVICE',
+  REVIEWS = 'REVIEWS_SERVICE',
 }
 
 export enum MessagePatterns {
@@ -26,4 +28,11 @@ export enum MessagePatterns {
 
   // Inventory
   GET_INVENTORY = 'get_inventory',
+
+  // Notifications
+  SEND_NOTIFICATION = 'send_notification',
+
+  // Reviews
+  GET_REVIEWS = 'get_reviews',
 }
+

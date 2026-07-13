@@ -3,7 +3,7 @@ const { join } = require('path');
 
 module.exports = {
   output: {
-    path: join(__dirname, '../../dist/apps/inventory-microservice'),
+    path: join(__dirname, '../../dist/apps/notification-microservice'),
   },
   plugins: [
     new NxWebpackPlugin({

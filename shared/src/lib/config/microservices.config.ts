@@ -25,5 +25,13 @@ export const MICROSERVICE_CONFIG = {
     host: process.env['INVENTORY_HOST'] || 'localhost',
     port: parseInt(process.env['INVENTORY_PORT'] || '3006', 10),
   },
+  [Services.NOTIFICATIONS]: {
+    host: process.env['NOTIFICATIONS_HOST'] || 'localhost',
+    port: parseInt(process.env['NOTIFICATIONS_PORT'] || '3007', 10),
+  },
+  [Services.REVIEWS]: {
+    host: process.env['REVIEWS_HOST'] || 'localhost',
+    port: parseInt(process.env['REVIEWS_PORT'] || '3008', 10),
+  },
 };
 

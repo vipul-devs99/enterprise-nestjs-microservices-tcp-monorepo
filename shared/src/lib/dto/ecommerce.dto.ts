@@ -44,3 +44,20 @@ export class Inventory {
   stock!: number;
   location!: string;
 }
+
+export class Notification {
+  id!: string;
+  userId!: string;
+  type!: string;
+  message!: string;
+  status!: string;
+}
+
+export class Review {
+  id!: string;
+  productId!: string;
+  userId!: string;
+  rating!: number;
+  comment!: string;
+}
+

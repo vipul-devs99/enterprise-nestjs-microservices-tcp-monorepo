@@ -1,7 +1,7 @@
 {
-  "name": "products-microservice",
+  "name": "notification-microservice",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/products-microservice/src",
+  "sourceRoot": "apps/notification-microservice/src",
   "projectType": "application",
   "tags": [],
   "targets": {
@@ -9,15 +9,15 @@
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "products-microservice:build",
+        "buildTarget": "notification-microservice:build",
         "inspect": false
       },
       "configurations": {
         "development": {
-          "buildTarget": "products-microservice:build:development"
+          "buildTarget": "notification-microservice:build:development"
         },
         "production": {
-          "buildTarget": "products-microservice:build:production"
+          "buildTarget": "notification-microservice:build:production"
         }
       }
     }

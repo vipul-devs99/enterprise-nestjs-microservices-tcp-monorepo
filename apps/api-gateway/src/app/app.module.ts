@@ -8,6 +8,8 @@ import { OrdersModule } from '../orders/orders.module';
 import { CartModule } from '../cart/cart.module';
 import { PaymentsModule } from '../payments/payments.module';
 import { InventoryModule } from '../inventory/inventory.module';
+import { NotificationsModule } from '../notifications/notifications.module';
+import { ReviewsModule } from '../reviews/reviews.module';
 
 @Module({
   imports: [
@@ -17,9 +19,12 @@ import { InventoryModule } from '../inventory/inventory.module';
     CartModule,
     PaymentsModule,
     InventoryModule,
+    NotificationsModule,
+    ReviewsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {}
+
 

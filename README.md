@@ -11,7 +11,7 @@ An enterprise-grade, highly scalable, and production-ready Microservices boilerp
 
 
 
-Developed and maintained by **Vipul**.
+Developed and maintained by **Vipul Maurya**.
 
 ---
 

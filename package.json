@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start:all": "nx run-many -t serve --parallel=7",
-    "stop:all": "powershell -Command \"3000..3006 | ForEach-Object { $conn = Get-NetTCPConnection -LocalPort $_ -ErrorAction SilentlyContinue; if ($conn) { Stop-Process -Id $conn.OwningProcess -Force -ErrorAction SilentlyContinue } }\""
+    "start:all": "nx run-many -t serve --parallel=9",
+    "stop:all": "powershell -Command \"3000..3008 | ForEach-Object { $conn = Get-NetTCPConnection -LocalPort $_ -ErrorAction SilentlyContinue; if ($conn) { Stop-Process -Id $conn.OwningProcess -Force -ErrorAction SilentlyContinue } }\""
   },
   "private": true,
   "devDependencies": {
