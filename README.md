@@ -23,7 +23,7 @@ This project implements a **Backend-For-Frontend (BFF) & Gateway Pattern** with 
 graph TD
     Client[Client App / Frontend] -->|HTTP / Swagger REST| Gateway[API Gateway]
     
-    subgraph Downstream Microservices (Intranet / TCP)
+    subgraph "Downstream Microservices (Intranet / TCP)"
         Gateway -->|TCP: 3001| Auth[Auth Microservice]
         Gateway -->|TCP: 3002| Products[Products Microservice]
         Gateway -->|TCP: 3003| Orders[Orders Microservice]
