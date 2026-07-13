@@ -1,6 +1,15 @@
-# Enterprise NestJS E-Commerce Microservices Workspace
+# Enterprise NestJS Microservices (TCP) Monorepo
 
-An enterprise-grade, highly scalable e-commerce backend built with **NestJS**, **Nx Monorepo**, and **TypeScript**, using high-performance **TCP transport layer** for microservice-to-microservice communication.
+[![NestJS](https://img.shields.io/badge/NestJS-e31b5f?style=flat&logo=nestjs&logoColor=white)](https://nestjs.com/)
+[![Nx Monorepo](https://img.shields.io/badge/Nx_Monorepo-14304b?style=flat&logo=nx&logoColor=white)](https://nx.dev/)
+[![TCP Transport](https://img.shields.io/badge/Transport-TCP-blue?style=flat)](#)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
+An enterprise-grade, highly scalable, and production-ready Microservices boilerplate built using **NestJS Microservices**, **Nx Monorepo**, and **TypeScript**, utilizing high-performance **TCP protocol** for inter-service communication. Includes E-Commerce domains as a demonstration case study.
+
+> **Topics/Keywords:** NestJS Microservices, TCP Transporter, Nx Monorepo, Backend-For-Frontend (BFF), Stateless API Gateway, Microservice Architecture, Dependency Injection.
+
+
 
 Developed and maintained by **Vipul**.
 

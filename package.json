@@ -1,5 +1,5 @@
 {
-  "name": "@nestjs-microservices/source",
+  "name": "enterprise-nestjs-microservices-tcp-monorepo",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
