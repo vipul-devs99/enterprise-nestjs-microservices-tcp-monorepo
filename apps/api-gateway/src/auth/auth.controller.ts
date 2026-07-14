@@ -1,4 +1,4 @@
-import { Body, Controller, Post, BadRequestException } from '@nestjs/common';
+import { Body, Controller, Post, Get, BadRequestException } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse, ApiBody } from '@nestjs/swagger';
 import { lastValueFrom } from 'rxjs';
 
@@ -9,6 +9,7 @@ import { AuthService } from './auth.service';
 @ApiTags('auth')
 @Controller('auth')
 export class AuthController {
+
   constructor(private readonly authService: AuthService) {}
 
   @Post('login')
