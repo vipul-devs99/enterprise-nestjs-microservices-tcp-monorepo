@@ -16,10 +16,9 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
 
   const config = new DocumentBuilder()
-    .setTitle('API Gateway')
-    .setDescription('The API Gateway for NestJS Microservices')
+    .setTitle('Enterprise NestJS E-Commerce Microservices Gateway (TCP)')
+    .setDescription('Stateless BFF Gateway proxying requests to downstream e-commerce microservices over high-performance TCP connections.')
     .setVersion('1.0')
-    .addTag('auth')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api/docs', app, document);
